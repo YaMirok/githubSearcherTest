@@ -126,6 +126,15 @@ extension SearchViewController: UITableViewDelegate {
         guard indexPath.row == loadMoreIndex else { return }
         output.loadMoreIndexWillShow()
     }
+
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let cellModel = cellsModels[indexPath.row]
+        switch cellModel {
+        case let .resultItem(model):
+            output.showDetailsPageForRepo(on: model.url)
+        }
+    }
 }
 
 // MARK: - UISearchBarDelegate

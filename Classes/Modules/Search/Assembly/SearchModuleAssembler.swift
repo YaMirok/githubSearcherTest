@@ -23,6 +23,8 @@ class SearchModuleAssembler {
         let networkService = NetworkService(builder: requestBuilder)
         interactor.searchService = GithubSearchService(networkService: networkService)
 
+        router.moduleViewController = viewController
+
         return viewController
     }
 }

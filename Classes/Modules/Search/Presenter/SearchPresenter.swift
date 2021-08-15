@@ -53,6 +53,10 @@ extension SearchPresenter: SearchViewOutput {
         }
         interactor.loadNextResultsPage(for: state.currentSearchString)
     }
+
+    func showDetailsPageForRepo(on url: URL) {
+        router.pushWebViewController(with: url)
+    }
 }
 
 // MARK: - SearchInteractorOutput

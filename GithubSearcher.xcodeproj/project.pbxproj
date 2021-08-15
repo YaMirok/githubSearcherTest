@@ -14,6 +14,7 @@
 		AC8982E0F7CE1DB60CA92CD4 /* SearchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898E3AA939FEFC89B7AAE4 /* SearchViewInput.swift */; };
 		AC8983322291F8961BAF6C67 /* GithubSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8982EF719A0842A75F74C7 /* GithubSearchService.swift */; };
 		AC898374870C2E4800D96F76 /* RequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89811FFF05CADB49F323AD /* RequestBuilderProtocol.swift */; };
+		AC8983789A0F7FAC9AC97E9C /* WebBrowserModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898EFA13CFC75C180C46B5 /* WebBrowserModuleAssembler.swift */; };
 		AC898536978A53FE948514C1 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898DE0B32848067B9CEE0C /* Cancellable.swift */; };
 		AC898553AC0FD29A48671219 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898E897D4B8B438B95613C /* UITableViewCell+ReuseIdentifier.swift */; };
 		AC8985966970FB67B9CDBAA6 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8987D03088C6A8AEA19E79 /* SearchInteractorOutput.swift */; };
@@ -88,6 +89,7 @@
 		AC898DE0B32848067B9CEE0C /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		AC898E3AA939FEFC89B7AAE4 /* SearchViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewInput.swift; sourceTree = "<group>"; };
 		AC898E897D4B8B438B95613C /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		AC898EFA13CFC75C180C46B5 /* WebBrowserModuleAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowserModuleAssembler.swift; sourceTree = "<group>"; };
 		AC898F4433EB3FCF25A05E23 /* SearchParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		FF3FE4A9130617246AE8B556 /* Pods-GithubSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearcher.debug.xcconfig"; path = "Target Support Files/Pods-GithubSearcher/Pods-GithubSearcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +250,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		AC8987A9659977B056093459 /* WebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				AC898B39B31BBCF92AB2D3BE /* Assembly */,
+			);
+			path = WebBrowser;
+			sourceTree = "<group>";
+		};
 		AC89880EF0F5863E13885913 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8982A6C738347EA0361FA9 /* Search */,
+				AC8987A9659977B056093459 /* WebBrowser */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -313,6 +324,14 @@
 				AC8983047A5D0310F455B16F /* UIColor+Dynamic.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC898B39B31BBCF92AB2D3BE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				AC898EFA13CFC75C180C46B5 /* WebBrowserModuleAssembler.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		AC898BBC23CF68A8CDCA686C /* Constants */ = {
@@ -533,6 +552,7 @@
 				AC898D6F8C805FBEAFC8BBCF /* SearchResultTableCellModel.swift in Sources */,
 				AC8987A0305EAE68CA9069AF /* SearchPresenterState.swift in Sources */,
 				AC898D7911AB7A7D39B3C91B /* HorizontalAnimationView.swift in Sources */,
+				AC8983789A0F7FAC9AC97E9C /* WebBrowserModuleAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

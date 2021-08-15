@@ -5,4 +5,5 @@
 import Foundation
 
 protocol SearchModuleRouterInput {
+    func pushWebViewController(with url: URL)
 }

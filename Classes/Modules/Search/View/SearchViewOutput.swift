@@ -8,4 +8,5 @@ protocol SearchViewOutput {
     func viewDidLoad()
     func searchTextChanged(text: String)
     func loadMoreIndexWillShow()
+    func showDetailsPageForRepo(on url: URL)
 }
