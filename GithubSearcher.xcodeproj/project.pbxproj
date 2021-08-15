@@ -32,11 +32,12 @@
 		AC898AD3432DD81C7AC0EAFC /* SearchModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89813D63C27D282C3A9818 /* SearchModuleRouter.swift */; };
 		AC898BA2A264D0C709149593 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8984B7003E68E2EDF5FAAA /* SearchViewController.swift */; };
 		AC898BACE3490AD51C8B6CF9 /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898F4433EB3FCF25A05E23 /* SearchParams.swift */; };
+		AC898BC096EAEAD1EB861210 /* SearchResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8984A431A5C9DDD96EB478 /* SearchResultTableCell.swift */; };
 		AC898BDE45F9899C35315531 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898A2E10B16ACDC39D2FD0 /* BaseRequestProtocol.swift */; };
-		AC898CA9C43A0951D609356D /* SearchResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898212E0D2BDF718AE92FC /* SearchResultTableCell.swift */; };
 		AC898CC3F10730C24A42302A /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898D4AA27C451AC09D02CC /* SearchInteractor.swift */; };
 		AC898CD976D286D265A77443 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8985550E9BD83032689132 /* SearchPresenter.swift */; };
 		AC898D185C3AA5126CDF5FA5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898AAC33E49D2AB6B62493 /* NetworkError.swift */; };
+		AC898D6F8C805FBEAFC8BBCF /* SearchResultTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898D897D5878686B6F9D13 /* SearchResultTableCellModel.swift */; };
 		AC898D7911AB7A7D39B3C91B /* HorizontalAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898C8FE5B0C5798F36AB39 /* HorizontalAnimationView.swift */; };
 		AC898DAAD8684A9F6A03FB22 /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898AEEE1CC9A1F349D570C /* SearchInteractorInput.swift */; };
 		AC898DC37F5F1CB58E9EFEBC /* SearchModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898AC9416A034728F37779 /* SearchModuleAssembler.swift */; };
@@ -55,14 +56,15 @@
 		A3445E0A26C8E7F900D55B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3445E0C26C8E7F900D55B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC8980CCA78FE78D11CC328A /* SearchModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouterInput.swift; sourceTree = "<group>"; };
+		AC898110ED6BEFE7A480AE46 /* SearchPresenterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterState.swift; sourceTree = "<group>"; };
 		AC89811FFF05CADB49F323AD /* RequestBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilderProtocol.swift; sourceTree = "<group>"; };
 		AC89813D63C27D282C3A9818 /* SearchModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouter.swift; sourceTree = "<group>"; };
 		AC8981DA23969344D23313CE /* Encodable+ToParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+ToParameters.swift"; sourceTree = "<group>"; };
-		AC898212E0D2BDF718AE92FC /* SearchResultTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableCell.swift; sourceTree = "<group>"; };
 		AC89824FB2A51F91D82385FB /* SearchResultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultItem.swift; sourceTree = "<group>"; };
 		AC8982EF719A0842A75F74C7 /* GithubSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchService.swift; sourceTree = "<group>"; };
 		AC8983047A5D0310F455B16F /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
 		AC898384189E47B21C40E0AE /* SearchResultResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
+		AC8984A431A5C9DDD96EB478 /* SearchResultTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableCell.swift; sourceTree = "<group>"; };
 		AC8984B7003E68E2EDF5FAAA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AC8985070C5007E633EDACFA /* ApiPathConforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPathConforming.swift; sourceTree = "<group>"; };
 		AC8985550E9BD83032689132 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		AC898C71AC3B9D0A14923045 /* GithubSearching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearching.swift; sourceTree = "<group>"; };
 		AC898C8FE5B0C5798F36AB39 /* HorizontalAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalAnimationView.swift; sourceTree = "<group>"; };
 		AC898D4AA27C451AC09D02CC /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		AC898D897D5878686B6F9D13 /* SearchResultTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableCellModel.swift; sourceTree = "<group>"; };
 		AC898DE0B32848067B9CEE0C /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		AC898E3AA939FEFC89B7AAE4 /* SearchViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewInput.swift; sourceTree = "<group>"; };
 		AC898E897D4B8B438B95613C /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
@@ -217,6 +220,15 @@
 			path = NetworkModel;
 			sourceTree = "<group>";
 		};
+		AC8983B749BCC8378337D73B /* SearchResultTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC8984A431A5C9DDD96EB478 /* SearchResultTableCell.swift */,
+				AC898D897D5878686B6F9D13 /* SearchResultTableCellModel.swift */,
+			);
+			path = SearchResultTableCell;
+			sourceTree = "<group>";
+		};
 		AC89843C4D31B7C594F2ACA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +260,7 @@
 		AC89891545937DE77E3053E4 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				AC898212E0D2BDF718AE92FC /* SearchResultTableCell.swift */,
+				AC8983B749BCC8378337D73B /* SearchResultTableCell */,
 				AC898C8FE5B0C5798F36AB39 /* HorizontalAnimationView.swift */,
 			);
 			path = CustomView;
@@ -508,7 +520,6 @@
 				AC898DC37F5F1CB58E9EFEBC /* SearchModuleAssembler.swift in Sources */,
 				AC898AD3432DD81C7AC0EAFC /* SearchModuleRouter.swift in Sources */,
 				AC8989D22D90D8F98D4CDC27 /* SearchModuleRouterInput.swift in Sources */,
-				AC898CA9C43A0951D609356D /* SearchResultTableCell.swift in Sources */,
 				AC898553AC0FD29A48671219 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				AC898BACE3490AD51C8B6CF9 /* SearchParams.swift in Sources */,
 				AC898A061A87524C533BA1BE /* Encodable+ToParameters.swift in Sources */,
@@ -518,6 +529,8 @@
 				AC89869F1C60D79C2B4374C5 /* Colors.swift in Sources */,
 				AC898E6886B059332CA95C4E /* UIColor+Dynamic.swift in Sources */,
 				AC8987B9A28E81E7497AF36B /* Fonts.swift in Sources */,
+				AC898BC096EAEAD1EB861210 /* SearchResultTableCell.swift in Sources */,
+				AC898D6F8C805FBEAFC8BBCF /* SearchResultTableCellModel.swift in Sources */,
 				AC8987A0305EAE68CA9069AF /* SearchPresenterState.swift in Sources */,
 				AC898D7911AB7A7D39B3C91B /* HorizontalAnimationView.swift in Sources */,
 			);
