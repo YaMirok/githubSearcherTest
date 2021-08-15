@@ -79,6 +79,11 @@ extension SearchPresenter: SearchInteractorOutput {
         state.isLoadingFirstPage = false
     }
 
+    func loadFirstPageFailed(error: Error) {
+        state.isLoadingFirstPage = false
+        processNetworkError(error)
+    }
+
     func didStartLoadingNextPage(for text: String) {
         guard text == state.currentSearchString else {
             return
@@ -95,9 +100,37 @@ extension SearchPresenter: SearchInteractorOutput {
         let viewModels = prepareViewModels(from: items)
         view.appendItems(viewModels)
     }
+
+    func loadNextPageFailed(error: Error) {
+        state.isLoadingNextPage = false
+        processNetworkError(error)
+    }
 }
 
 private extension SearchPresenter {
+
+    func processNetworkError(_ error: Error) {
+        var errorDescription: String?
+        if let networkError = error as? NetworkError {
+            switch networkError {
+            case .cancelled:
+                return
+            case let .apiError(error):
+                errorDescription = error.message
+            case let .inner(innerError):
+                errorDescription = innerError.errorDescription
+            case .unknown:
+                errorDescription = "Something went wrong."
+            default:
+                break
+            }
+        } else {
+            errorDescription = error.localizedDescription
+        }
+        guard let errorDescription = errorDescription else { return }
+        view.showErrorAlert(with: errorDescription)
+    }
+
     func prepareViewModels(from items: [SearchResultItem]) -> [SearchResultTableCellModel] {
         var viewModels = [SearchResultTableCellModel]()
         let dateFormatter = DateFormatter()

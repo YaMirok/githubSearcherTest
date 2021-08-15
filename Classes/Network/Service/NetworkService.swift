@@ -34,13 +34,27 @@ final class NetworkService {
 
     private func sendRequestWithoutAuthentication<ResultType: Decodable>(_ request: URLRequest,
                                                                          completion: @escaping RequestCompletionClosureType<ResultType>) -> DataRequest {
-        guestSession.request(request).responseDecodable(of: ResultType.self) { (dataResponse: AFDataResponse<ResultType>) in
-            if let responseObject = dataResponse.value {
-                completion(.success(responseObject))
-            } else if let error = dataResponse.error {
-                completion(.failure(.inner(afError: error)))
-            }
-        }
+        guestSession.request(request)
+                .validate(statusCode: 200..<300)
+                .responseDecodable(of: ResultType.self) { (dataResponse: AFDataResponse<ResultType>) in
+                    let jsonDecoder = JSONDecoder()
+                    if let responseObject = dataResponse.value {
+                        completion(.success(responseObject))
+                        return
+                    } else if let data = dataResponse.data,
+                              let apiError = try? jsonDecoder.decode(ApiError.self, from: data) {
+                        completion(.failure(.apiError(error: apiError)))
+                    } else if let error = dataResponse.error {
+                        switch error {
+                        case .explicitlyCancelled:
+                            completion(.failure(.cancelled))
+                        default:
+                            completion(.failure(.inner(afError: error)))
+                        }
+                    } else {
+                        completion(.failure(.unknown))
+                    }
+                }
     }
 
 }

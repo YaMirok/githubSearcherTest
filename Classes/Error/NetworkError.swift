@@ -8,5 +8,8 @@ import Alamofire
 enum NetworkError: Error {
     case requestBuildError
     case accessTokenNotFound
+    case cancelled
+    case unknown
+    case apiError(error: ApiError)
     case inner(afError: AFError)
 }

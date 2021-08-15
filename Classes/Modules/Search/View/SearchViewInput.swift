@@ -9,4 +9,5 @@ protocol SearchViewInput: AnyObject {
     func hideLoadingAnimation()
     func showNewItems(_ items: [SearchResultTableCellModel])
     func appendItems(_ items: [SearchResultTableCellModel])
+    func showErrorAlert(with error: String)
 }

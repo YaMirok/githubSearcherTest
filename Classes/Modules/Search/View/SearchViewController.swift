@@ -125,6 +125,12 @@ extension SearchViewController: SearchViewInput {
             tableView.insertRows(at: indexPathsToInsert, with: .bottom)
         }
     }
+
+    func showErrorAlert(with error: String) {
+        let alertController = UIAlertController(title: "Ooops! :(", message: error, preferredStyle: .alert)
+        alertController.addAction(.init(title: "Ok", style: .default))
+        present(alertController, animated: true)
+    }
 }
 
 // MARK: - UITableViewDataSource

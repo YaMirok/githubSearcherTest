@@ -35,7 +35,7 @@ extension SearchInteractor: SearchInteractorInput {
                                                                                      for: text,
                                                                                      canLoadMore: !result.incompleteResults)
                                                         case let .failure(error):
-                                                            debugPrint(error)
+                                                            sSelf.output.loadFirstPageFailed(error: error)
                                                         }
                                                     })
     }
@@ -58,7 +58,7 @@ extension SearchInteractor: SearchInteractorInput {
                                                                                    for: text,
                                                                                    canLoadMore: !result.incompleteResults)
                                                         case let .failure(error):
-                                                            debugPrint(error)
+                                                            sSelf.output.loadNextPageFailed(error: error)
                                                         }
                                                     })
     }
