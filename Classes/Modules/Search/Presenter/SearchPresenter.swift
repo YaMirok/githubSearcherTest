@@ -9,10 +9,25 @@ final class SearchPresenter {
     var interactor: SearchInteractorInput!
     var router: SearchModuleRouterInput!
 
+    // MARK: - Private variables
+
+    private var startSearchDispatchItem: DispatchWorkItem?
+
 }
 
 // MARK: - SearchViewOutput
 
 extension SearchPresenter: SearchViewOutput {
+    func viewDidLoad() {
 
+    }
+
+    func searchTextChanged(text: String) {
+        startSearchDispatchItem?.cancel()
+        let nextSearchDispatchItem = DispatchWorkItem(qos: .utility, block: { [weak self] in
+            self?.interactor.obtainSearchResults(for: text)
+        })
+        startSearchDispatchItem = nextSearchDispatchItem
+        DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(250), execute: nextSearchDispatchItem)
+    }
 }

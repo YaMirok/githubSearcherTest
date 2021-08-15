@@ -5,4 +5,6 @@
 import Foundation
 
 protocol SearchViewOutput {
+    func viewDidLoad()
+    func searchTextChanged(text: String)
 }

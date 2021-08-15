@@ -13,5 +13,7 @@ final class SearchInteractor {
 // MARK: - SearchInteractorInput
 
 extension SearchInteractor: SearchInteractorInput {
+    func obtainSearchResults(for text: String) {
 
+    }
 }
