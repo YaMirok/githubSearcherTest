@@ -20,6 +20,7 @@
 		AC8985FB87F0CA5A16D46C3A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898A33130C66F5FBDB3B69 /* RequestBuilder.swift */; };
 		AC89869F1C60D79C2B4374C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8988D48E467520C34FF329 /* Colors.swift */; };
 		AC8986FBABFE91EA53F0EF83 /* SearchResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89824FB2A51F91D82385FB /* SearchResultItem.swift */; };
+		AC8987A0305EAE68CA9069AF /* SearchPresenterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898110ED6BEFE7A480AE46 /* SearchPresenterState.swift */; };
 		AC8987B9A28E81E7497AF36B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89866471577DE7A3B5DA2D /* Fonts.swift */; };
 		AC8987D27F5BDCDEBA502B44 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8987ED2841810C3901A3BB /* NetworkService.swift */; };
 		AC898948FFA89DA815435CC9 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898C21AC044C598B71133B /* GetRequest.swift */; };
@@ -257,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8985550E9BD83032689132 /* SearchPresenter.swift */,
+				AC898110ED6BEFE7A480AE46 /* SearchPresenterState.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -516,6 +518,7 @@
 				AC89869F1C60D79C2B4374C5 /* Colors.swift in Sources */,
 				AC898E6886B059332CA95C4E /* UIColor+Dynamic.swift in Sources */,
 				AC8987B9A28E81E7497AF36B /* Fonts.swift in Sources */,
+				AC8987A0305EAE68CA9069AF /* SearchPresenterState.swift in Sources */,
 				AC898D7911AB7A7D39B3C91B /* HorizontalAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
