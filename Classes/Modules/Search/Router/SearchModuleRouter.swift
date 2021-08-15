@@ -4,5 +4,5 @@
 
 import Foundation
 
-class SearchModuleRouter {
+final class SearchModuleRouter: SearchModuleRouterInput {
 }

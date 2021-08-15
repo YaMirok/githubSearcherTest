@@ -4,5 +4,5 @@
 
 import Foundation
 
-protocol SearchViewInput {
+protocol SearchViewInput: AnyObject {
 }

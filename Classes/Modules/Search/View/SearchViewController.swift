@@ -6,5 +6,12 @@ import UIKit
 import SnapKit
 
 final class SearchViewController: UIViewController {
+    var output: SearchViewOutput!
+
+}
+
+// MARK: - SearchViewInput
+
+extension SearchViewController: SearchViewInput {
 
 }

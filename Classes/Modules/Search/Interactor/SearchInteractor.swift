@@ -4,5 +4,14 @@
 
 import Foundation
 
-class SearchInteractor {
+final class SearchInteractor {
+    weak var output: SearchInteractorOutput!
+
+
+}
+
+// MARK: - SearchInteractorInput
+
+extension SearchInteractor: SearchInteractorInput {
+
 }

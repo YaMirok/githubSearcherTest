@@ -4,5 +4,5 @@
 
 import Foundation
 
-protocol SearchInteractorOutput {
+protocol SearchInteractorOutput: AnyObject {
 }
