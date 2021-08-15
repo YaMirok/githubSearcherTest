@@ -18,6 +18,11 @@ class SearchModuleAssembler {
         presenter.interactor = interactor
         presenter.router = router
 
+        interactor.output = presenter
+        let requestBuilder = RequestBuilder(NetworkSettings.baseUrl, cachePolicy: .returnCacheDataElseLoad)
+        let networkService = NetworkService(builder: requestBuilder)
+        interactor.searchService = GithubSearchService(networkService: networkService)
+
         return viewController
     }
 }

@@ -31,3 +31,7 @@ extension SearchPresenter: SearchViewOutput {
         DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(250), execute: nextSearchDispatchItem)
     }
 }
+
+extension SearchPresenter: SearchInteractorOutput {
+
+}
