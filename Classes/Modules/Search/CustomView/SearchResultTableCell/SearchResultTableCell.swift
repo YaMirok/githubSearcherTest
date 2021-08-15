@@ -71,7 +71,7 @@ extension SearchResultTableCell {
     func configure(_ model: SearchResultTableCellModel) {
         self.model = model
         titleLabel.text = model.title
-        updatedAtLabel.text = "Updated at: " + (model.updatedAtString ?? "")
+        updatedAtLabel.text = "Last update: " + (model.updatedAtString ?? "")
         starsCountLabel.text = "Stars count: \(model.starsCount) " + "★"
     }
 }

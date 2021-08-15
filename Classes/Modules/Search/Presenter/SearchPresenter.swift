@@ -101,8 +101,7 @@ private extension SearchPresenter {
     func prepareViewModels(from items: [SearchResultItem]) -> [SearchResultTableCellModel] {
         var viewModels = [SearchResultTableCellModel]()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .full
-        dateFormatter.timeStyle = .medium
+        dateFormatter.dateStyle = .short
         for item in items {
             guard let url = item.url else {
                 continue
