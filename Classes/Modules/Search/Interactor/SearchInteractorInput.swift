@@ -6,4 +6,5 @@ import Foundation
 
 protocol SearchInteractorInput {
     func obtainSearchResults(for text: String)
+    func loadNextResultsPage(for text: String)
 }

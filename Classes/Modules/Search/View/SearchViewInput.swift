@@ -5,4 +5,8 @@
 import Foundation
 
 protocol SearchViewInput: AnyObject {
+    func showLoadingAnimation()
+    func hideLoadingAnimation()
+    func showNewItems(_ items: [SearchResultTableCellModel])
+    func appendItems(_ items: [SearchResultTableCellModel])
 }
