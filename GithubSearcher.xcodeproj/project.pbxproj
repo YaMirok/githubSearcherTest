@@ -11,6 +11,17 @@
 		A3445DFF26C8E7F600D55B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3445DFE26C8E7F600D55B6B /* AppDelegate.swift */; };
 		A3445E0826C8E7F900D55B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3445E0726C8E7F900D55B6B /* Assets.xcassets */; };
 		A3445E0B26C8E7F900D55B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3445E0926C8E7F900D55B6B /* LaunchScreen.storyboard */; };
+		AC8983322291F8961BAF6C67 /* GithubSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8982EF719A0842A75F74C7 /* GithubSearchService.swift */; };
+		AC898374870C2E4800D96F76 /* RequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89811FFF05CADB49F323AD /* RequestBuilderProtocol.swift */; };
+		AC8985FB87F0CA5A16D46C3A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898A33130C66F5FBDB3B69 /* RequestBuilder.swift */; };
+		AC8987D27F5BDCDEBA502B44 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8987ED2841810C3901A3BB /* NetworkService.swift */; };
+		AC898948FFA89DA815435CC9 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898C21AC044C598B71133B /* GetRequest.swift */; };
+		AC8989F7732322CD8367F759 /* ApiPathConforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8985070C5007E633EDACFA /* ApiPathConforming.swift */; };
+		AC898A2412CA571183E5E09B /* GithubSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898C71AC3B9D0A14923045 /* GithubSearching.swift */; };
+		AC898BDE45F9899C35315531 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898A2E10B16ACDC39D2FD0 /* BaseRequestProtocol.swift */; };
+		AC898D185C3AA5126CDF5FA5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898AAC33E49D2AB6B62493 /* NetworkError.swift */; };
+		AC898EFCB47959AE200E0860 /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898B93F75AB3BF5471EE53 /* NetworkSettings.swift */; };
+		AC898FF38D5186B28177544C /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC898B530F6E47966F168526 /* ApiRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +32,17 @@
 		A3445E0726C8E7F900D55B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3445E0A26C8E7F900D55B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3445E0C26C8E7F900D55B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC89811FFF05CADB49F323AD /* RequestBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		AC8982EF719A0842A75F74C7 /* GithubSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchService.swift; sourceTree = "<group>"; };
+		AC8985070C5007E633EDACFA /* ApiPathConforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPathConforming.swift; sourceTree = "<group>"; };
+		AC8987ED2841810C3901A3BB /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC898A2E10B16ACDC39D2FD0 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
+		AC898A33130C66F5FBDB3B69 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		AC898AAC33E49D2AB6B62493 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AC898B530F6E47966F168526 /* ApiRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
+		AC898B93F75AB3BF5471EE53 /* NetworkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		AC898C21AC044C598B71133B /* GetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		AC898C71AC3B9D0A14923045 /* GithubSearching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearching.swift; sourceTree = "<group>"; };
 		FF3FE4A9130617246AE8B556 /* Pods-GithubSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearcher.debug.xcconfig"; path = "Target Support Files/Pods-GithubSearcher/Pods-GithubSearcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +73,7 @@
 				A3445DFC26C8E7F600D55B6B /* Products */,
 				F316E792FDA555C472F49E8E /* Pods */,
 				2B636D791C24ABBFBB962E10 /* Frameworks */,
+				AC89809653837A951F8B4A6B /* Classes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +94,112 @@
 				A3445E0C26C8E7F900D55B6B /* Info.plist */,
 			);
 			path = GithubSearcher;
+			sourceTree = "<group>";
+		};
+		AC8980214F8545A8849961F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC8987ED2841810C3901A3BB /* NetworkService.swift */,
+				AC898D1DA5B0C57B20F627F4 /* GithubSearch */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AC89809653837A951F8B4A6B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC898A0AE60529D7A23B9ACB /* Network */,
+				AC898F706C2C2BA1FC28D6C0 /* Error */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC89817FFD80460C76377F81 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				AC898B530F6E47966F168526 /* ApiRoutes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		AC89826E0D701B1738874222 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC8985070C5007E633EDACFA /* ApiPathConforming.swift */,
+				AC898A2E10B16ACDC39D2FD0 /* BaseRequestProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AC8982A3741317B6790D5033 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				AC898A33130C66F5FBDB3B69 /* RequestBuilder.swift */,
+				AC89811FFF05CADB49F323AD /* RequestBuilderProtocol.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		AC89835AF7D59061C44EB021 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC898D5574D8B9147CCB4119 /* Response */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		AC89880EF0F5863E13885913 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AC89826E0D701B1738874222 /* Protocol */,
+				AC898C21AC044C598B71133B /* GetRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AC898A0AE60529D7A23B9ACB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AC89817FFD80460C76377F81 /* Routes */,
+				AC89880EF0F5863E13885913 /* Request */,
+				AC8980214F8545A8849961F7 /* Service */,
+				AC898BBC23CF68A8CDCA686C /* Constants */,
+				AC89835AF7D59061C44EB021 /* NetworkModel */,
+				AC8982A3741317B6790D5033 /* RequestBuilder */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AC898BBC23CF68A8CDCA686C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AC898B93F75AB3BF5471EE53 /* NetworkSettings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AC898D1DA5B0C57B20F627F4 /* GithubSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AC898C71AC3B9D0A14923045 /* GithubSearching.swift */,
+				AC8982EF719A0842A75F74C7 /* GithubSearchService.swift */,
+			);
+			path = GithubSearch;
+			sourceTree = "<group>";
+		};
+		AC898D5574D8B9147CCB4119 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		AC898F706C2C2BA1FC28D6C0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AC898AAC33E49D2AB6B62493 /* NetworkError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		F316E792FDA555C472F49E8E /* Pods */ = {
@@ -197,6 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3445DFF26C8E7F600D55B6B /* AppDelegate.swift in Sources */,
+				AC898FF38D5186B28177544C /* ApiRoutes.swift in Sources */,
+				AC8989F7732322CD8367F759 /* ApiPathConforming.swift in Sources */,
+				AC898BDE45F9899C35315531 /* BaseRequestProtocol.swift in Sources */,
+				AC898948FFA89DA815435CC9 /* GetRequest.swift in Sources */,
+				AC8987D27F5BDCDEBA502B44 /* NetworkService.swift in Sources */,
+				AC898EFCB47959AE200E0860 /* NetworkSettings.swift in Sources */,
+				AC8985FB87F0CA5A16D46C3A /* RequestBuilder.swift in Sources */,
+				AC898374870C2E4800D96F76 /* RequestBuilderProtocol.swift in Sources */,
+				AC898D185C3AA5126CDF5FA5 /* NetworkError.swift in Sources */,
+				AC898A2412CA571183E5E09B /* GithubSearching.swift in Sources */,
+				AC8983322291F8961BAF6C67 /* GithubSearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
