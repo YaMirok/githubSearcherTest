@@ -49,6 +49,7 @@ final class SearchViewController: UIViewController {
         title = "Github.com"
         addSubviews()
         makeConstraints()
+        setupNotifications()
         output.viewDidLoad()
     }
 
@@ -69,6 +70,32 @@ final class SearchViewController: UIViewController {
             maker.top.equalTo(view.snp.topMargin)
             maker.bottom.equalTo(view.snp.bottomMargin)
         }
+    }
+
+    private func setupNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShowHandler),
+                                               name: UIApplication.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHideHandler),
+                                               name: UIApplication.keyboardWillHideNotification,
+                                               object: nil)
+    }
+
+    @objc private func keyboardWillShowHandler(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let keyboardHeight = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height else {
+            return
+        }
+        let bottomInset = keyboardHeight - view.safeAreaInsets.bottom
+        tableView.contentInset = .init(top: 0, left: 0, bottom: bottomInset, right: 0)
+        tableView.scrollIndicatorInsets = .init(top: 0, left: 0, bottom: bottomInset, right: 0)
+    }
+
+    @objc private func keyboardWillHideHandler() {
+        tableView.contentInset = .zero
+        tableView.scrollIndicatorInsets = .zero
     }
 }
 
@@ -144,4 +171,7 @@ extension SearchViewController: UISearchBarDelegate {
         output.searchTextChanged(text: searchText)
     }
 
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        _ = searchBar.resignFirstResponder()
+    }
 }
